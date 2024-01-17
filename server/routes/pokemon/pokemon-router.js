@@ -17,7 +17,9 @@ router.get("/", async function (req, res) {
     pokemon = paginatedResults(pokemon, page, limit);
 
     return res.status(200).json(pokemon);
-  } catch (error) {}
+  } catch (error) {
+    res.status(400).json(error.message);
+  }
 });
 
 module.exports = router;
