@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-async function getPokemon() {
+async function getPokemon(limit, page) {
   let pokemon = await axios.get(
     `https://pokeapi.co/api/v2/pokemon/?limit=1302`
   );
