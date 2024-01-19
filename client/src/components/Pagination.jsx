@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function Pagination({ localState, setLocalState, page, limit }) {
   const handleClick1 = (e) => {
     e.preventDefault();

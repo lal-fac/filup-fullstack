@@ -1,11 +1,11 @@
 import "./App.css";
-import PokemonStack from "./components/PokemonStack";
+import Holder from "./components/Holder";
 import PokemonState from "./context/PokemonState";
 
 function App() {
   return (
     <PokemonState>
-      <PokemonStack />
+      <Holder />
     </PokemonState>
   );
 }
