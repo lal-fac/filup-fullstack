@@ -1,6 +1,4 @@
 function paginatedResults(model, page, limit) {
-  console.log(`${page}, ${limit}`);
-
   if (!page || !limit) throw new Error("Pagination query error");
 
   const startIndex = (page - 1) * limit;
